@@ -12,6 +12,7 @@ github 地址：[基于 React-Hooks+Antd 实现后台模板](https://github.com/
 - react-router-dom ^6.2.2
 - canvas
 - ES6
+- Less
 
 当然也参考了其他的优秀内容，比如[动态打字效果](https://www.cnblogs.com/coffeedeveloper/p/3852894.html)和[全屏插件](https://github.com/sindresorhus/screenfull.js)，整体思路也是参考的[基于 React+antd 实现后台模板](https://github.com/z-9527/react-admin-master) 来实现的。
 

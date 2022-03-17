@@ -3,6 +3,7 @@ import { Badge, Menu, Dropdown } from 'antd'
 import screenfull from 'screenfull'
 import { MenuUnfoldOutlined, MenuFoldOutlined, NotificationOutlined, ShrinkOutlined, ArrowsAltOutlined } from '@ant-design/icons';
 import { useNavigate, useLocation } from 'react-router-dom'
+import './headerBar.less'
 const avatar = require('@/assets/img/user-avatar.jpg');
 
 const HeaderBar = ({ collapsed, toggle }) => {
@@ -36,7 +37,7 @@ const HeaderBar = ({ collapsed, toggle }) => {
   }
 
   return (
-    <div>
+    <div className='header-box'>
       <span className='trigger' onClick={toggle}>{collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}</span>
       <div style={{ lineHeight: '64px', float: 'right' }}>
         <ul className='header-ul'>

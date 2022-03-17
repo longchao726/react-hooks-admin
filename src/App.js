@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './app.css'
+import './app.less'
 import { Layout } from 'antd';
 import SiderNav from './components/siderNav'
 import HeaderBar from './components/headerBar';
