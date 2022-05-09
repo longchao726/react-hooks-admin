@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Form, Input, Row, Col } from 'antd'
-import './login.css'
+import { Form, Input, Row, Col, notification } from 'antd'
+import './login.less'
 import { useNavigate, useLocation } from 'react-router-dom';
 
 //生成随机数
 const randomNum = (min, max) => {
   return Math.floor(Math.random() * (max - min) + min);
 }
+const key = 'account';
 
 const Login = () => {
   const [focusItem, setFocusItem] = useState(-1);
@@ -16,6 +17,8 @@ const Login = () => {
   const location = useLocation();
   useEffect(() => {
     createCode()
+    openNotification()
+    return closeNotification
   }, [])
 
   const onFinish = (values) => {
@@ -55,6 +58,20 @@ const Login = () => {
     }
 
   }
+
+  const openNotification = () => {
+    notification.open({
+      message: <ul><li>账号：admin</li><li>密码：123456</li></ul>,
+      duration: 0,
+      className: 'login-notification',
+      key
+    })
+  };
+
+  const closeNotification = () => {
+    notification.close(key)
+  }
+
   return (
     <div className='loginBox'>
       <div className='container'>

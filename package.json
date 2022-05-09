@@ -35,6 +35,8 @@
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.4.5",
+    "mobx": "^6.5.0",
+    "mobx-react": "^7.4.0",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
