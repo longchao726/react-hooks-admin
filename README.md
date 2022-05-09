@@ -10,6 +10,7 @@ github 地址：[基于 React-Hooks+Antd 实现后台模板](https://github.com/
 - react ^17.0.2
 - antd ^4.18.9
 - react-router-dom ^6.2.2
+- mobx ^6.5.0
 - canvas
 - ES6
 - Less
